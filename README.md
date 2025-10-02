@@ -2,8 +2,6 @@
 
 This project is a comprehensive tool for tracking job applications, designed to streamline the job-hunting process. It uses a local AI model via Ollama to automatically parse and extract key information from job postings from URLs, PDF files, or pasted text. The application features a modern web dashboard, a command-line interface, and an optional macOS shortcut for quickly saving jobs from your browser.
 
-![Dashboard Screenshot](https://i.imgur.com/your-screenshot-url.png) ---
-
 ## Features
 
 -   **Web Dashboard:** A clean, responsive dashboard to view all your applications, track statuses, and visualize your progress.
@@ -44,8 +42,8 @@ This project is a comprehensive tool for tracking job applications, designed to 
 ### 2. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/ai-job-tracker.git](https://github.com/your-username/ai-job-tracker.git)
-cd ai-job-tracker
+git clone [https://github.com/hafnium-ham/job_tracking](https://github.com/hafnium-ham/job_tracking)
+cd job_trackeing
 ```
 
 ### 3. Set Up a Virtual Environment
@@ -96,19 +94,19 @@ The `cli.py` script provides a full-featured terminal interface.
 
 ```bash
 # Show all jobs
-python cli.py show
+python3 cli.py show
 
 # Add a new job from a URL
-python cli.py add [https://www.linkedin.com/jobs/view/some-job-id](https://www.linkedin.com/jobs/view/some-job-id)
+python3 cli.py add [https://www.linkedin.com/jobs/view/some-job-id](https://www.linkedin.com/jobs/view/some-job-id)
 
 # Add a new job from a PDF
-python cli.py add /path/to/your/job-description.pdf
+python3 cli.py add /path/to/your/job-description.pdf
 
 # Update a job's status
-python cli.py update
+python3 cli.py update
 
 # Show application statistics
-python cli.py stats
+python3 cli.py stats
 ```
 
 ### 3. Use the macOS Shortcut Listener (Optional)
@@ -125,7 +123,7 @@ You may need to grant accessibility permissions to your terminal or code editor 
 **Run the Listener:**
 
 ```bash
-python shortcut_listener.py
+python3 shortcut_listener.py
 ```
 
 Leave this terminal window running. Now, whenever you are on a job posting page in Chrome, press `Cmd+Shift+K`, and the script will automatically process and save the job.
